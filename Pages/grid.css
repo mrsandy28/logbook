@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+    height: 300px;
+    gap: 2%;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box1 {
+    background-color: black;
+}
+.box2 {
+    background-color: purple;
+}
+
+.box3 {
+    background-color: red;
+}
+
+.box4 {
+    background-color: green;
+}
+
+.box5 {
+    background-color: blue;
+}
+
+.box6 {
+    background-color: yellow;
+}

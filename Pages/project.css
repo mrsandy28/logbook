@@ -1,0 +1,31 @@
+.container{
+    height:50vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:10px;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: pink;
+}
+
+.box3{
+    background-color: orange;
+}
+
+.box4{
+    background-color: green;
+}
+
+.box5{
+    background-color: lightgreen;
+}
+
+.box6{
+    background-color: lightblue;
+}

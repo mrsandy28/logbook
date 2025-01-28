@@ -1,0 +1,49 @@
+.container{
+    height:100vh;
+display: grid;
+grid-template-rows: repeat(4, 100fr);
+grid-template-columns: repeat(5, 100fr);
+gap: 10px;
+padding: 20px;
+grid-template-areas: 
+"H H A S"
+"H H F F"
+}
+
+.box1{
+    background-color: black;
+    border-radius: 5px;
+    grid-area: H;
+    width: 100%;
+    background-image: url("https://www.dreambaby.be/web/image/922629-36351f70/feetje-4-4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box2{
+    background-color: blue;
+    border-radius: 5px;
+    grid-area: A;
+    background-image: url("https://www.dreambaby.be/web/image/922295-924e506c/schommelschaap-1-4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box3{
+    background-color: pink;
+    border-radius: 5px;
+    grid-area: S;
+    width: 100%;
+    background-image: url("https://www.dreambaby.be/web/image/922547-dfe76bdd/timio-1-4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box4{
+    background-color: yellow;
+    border-radius: 5px;
+    grid-area: F;
+    background-image: url("https://www.dreambaby.be/web/image/926021-bd0485de/little-dutch-bunny-2-4.jpg");
+    background-size: cover;
+    background-position: center;
+}

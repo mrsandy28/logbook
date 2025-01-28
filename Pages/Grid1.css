@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 1% ;
+    margin-right: 200px;
+}
+.box1 {
+    background-color: rgb(92, 10, 10);
+    height: auto;
+}
+
+.box2 {
+    background-color: rgb(27, 160, 153);
+    height: auto;
+}
+
+.box3 {
+    background-color: rgb(97, 14, 186);
+    height: auto;
+}
+
+.box4 {
+    background-color: rgb(216, 30, 170);
+    height: auto;
+}
+.box5 {
+    background-color: rgb(236, 237, 243);
+    height: auto;
+    border: 35px solid black;
+
+}.box6 {
+    background-color: rgb(12, 10, 12);
+    height: auto;
+}

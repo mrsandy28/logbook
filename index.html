@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub Repository Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+    </style>
 </head>
 <body>
-    <p>Hello my name is SANDESH dahal</p>
+    <div class="container">
+        <h2>GitHub Repository Index</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Repository Name</th>
+                    <th>Description</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Responsive</td>
+                    <td>A responsive webpage</td>
+                    <td><a href="./Pages/responsibe.html"> click here</a></td>
+                </tr>
+                <tr>
+                    <td>Repo 2</td>
+                    <td>Brief description of Repo 2</td>
+                    <td>2025-01-27</td>
+                </tr>
+                <tr>
+                    <td>Repo 3</td>
+                    <td>Brief description of Repo 3</td>
+                    <td>2025-01-26</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

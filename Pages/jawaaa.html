@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>my first paragraph</p
+    <p class="main">my second paragraph</p>
+    <a href="http://www.google.com">google</a>
+    <h1>Hello world</h1> -->
+    <img src="download (8).jpg" alt="my image">
+    <input type="text" name="linking">
+    <input type="button" name="button" value="change" onclick="printing()">
+    <script>
+        function printing(){
+            var x = document.getElementsByName("linking")[0].value;
+            document.getElementsByTagName("img")[0].src = x;
+        }
+    </script>
+</body>
+</html>

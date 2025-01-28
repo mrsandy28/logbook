@@ -1,0 +1,51 @@
+.container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    background-color: beige;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a b b" 
+    "c d e";
+    justify-content: center;
+    border-radius: 15px;
+
+}
+.box{
+    border-radius: 15px;
+}
+.box1{
+    background-color: rgb(255, 255, 255);
+    grid-area: a;
+    
+
+
+}
+.box2{
+    grid-area: b;
+    background-image:url("chair.webp");
+    background-position: center ;
+
+}
+.box3{
+   
+
+    background-color: rgb(17, 66, 211);
+    grid-area: c;
+
+
+}
+.box4{
+    
+    background-color: rgb(145, 159, 68);
+    grid-area: d;
+
+    
+}
+.box5{
+    
+    background-color: rgb(12, 247, 173);
+    grid-area: e;
+
+    
+}
