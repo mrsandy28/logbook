@@ -15,8 +15,9 @@
     border-radius: 15px;
 }
 .box1{
-    background-color: rgb(255, 255, 255);
+    background-image: url("robot.webp");
     grid-area: a;
+
     
 
 
@@ -30,16 +31,16 @@
 .box3{
    
 
-    background-color: rgb(17, 66, 211);
+    background-image: url("download\ \(1\).jpeg");
     grid-area: c;
-
+    background-position: center ;
 
 }
 .box4{
     
-    background-color: rgb(145, 159, 68);
+    background-image: url("download.webp");
     grid-area: d;
-
+    background-position: center ;
     
 }
 .box5{
