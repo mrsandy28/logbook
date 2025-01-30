@@ -4,13 +4,13 @@ body {
     padding: 0;
 }
 header, footer {
-    background-color: #333;
+    background-color: #61b2e9;
     color: #fff;
     text-align: center;
     padding: 1em 0;
 }
 nav {
-    background-color: #444;
+    background-color: #062e0c;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -32,7 +32,7 @@ nav {
     padding: 20px;
 }
 .photo, .text {
-    background-color: #ddd;
+    background-color: #b7ecfe;
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
