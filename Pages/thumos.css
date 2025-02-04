@@ -5,7 +5,7 @@
     background-color: beige;
     grid-gap: 20px;
     grid-template-areas:
-    "a b b" 
+    "a a b" 
     "c d e";
     justify-content: center;
     border-radius: 15px;
@@ -31,14 +31,14 @@
 .box3{
    
 
-    background-image: url("download\ \(1\).jpeg");
+    background-image: url("robot.webp");
     grid-area: c;
     background-position: center ;
 
 }
 .box4{
     
-    background-image: url("download.webp");
+    background-color: aquamarine;
     grid-area: d;
     background-position: center ;
     

@@ -1,0 +1,28 @@
+body {
+    background-color: dark gray;
+    color: azure;
+    font: 14px times;
+    font-size: large;
+    
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+
+dt{
+    color: green;
+}
+
+dl{
+    font-size: 14px;
+}
+
+a:hover {
+    color: brown;
+}
+
+img {
+    height:200px ;
+    width:200px ;
+}
