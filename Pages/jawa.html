@@ -3,47 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>An Introduction to JavaScript</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #d4d4d4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #1f1f1f;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background-color: #333333;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            background-color: #121212;
+        }
+        .content h1 {
+            color: #64b5f6;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            color: #64b5f6;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .content p {
+            color: #d4d4d4;
+            margin-bottom: 20px;
+        }
+        .content .info-box {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-left: 4px solid #64b5f6;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .info-box p {
+            margin: 0;
+        }
+        /* Additional CSS for professional look */
+        .content {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar ul li a.active {
+            background-color: #333333;
+        }
+        .sidebar ul li a.active:hover {
+            background-color: #444444;
+        }
+    </style>
 </head>
 <body>
-    <script>
- 
-        // let username = prompt("What is your first name: ");
-        // let lastname = prompt("What is your last name: ");
+    <div class="container">
+        <div class="sidebar">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#syntax">JavaScript Syntax</a></li>
+                <li><a href="#variables">Variables</a></li>
+                <li><a href="#datatypes">Data Types</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#dom">DOM Manipulation</a></li>
+                <li><a href="#es6">ES6 Features</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>An Introduction to JavaScript</h1>
+            <h2 id="intro">Introduction</h2>
+            <p>JavaScript is a versatile programming language that enables you to create dynamic and interactive web content. It is an essential part of modern web development and is supported by all major web browsers.</p>
+            <p>With JavaScript, you can add interactivity to websites, control multimedia, animate images, and much more. Whether you're a beginner or an experienced developer, learning JavaScript can open up a world of possibilities in web development.</p>
+            
+            <h2 id="syntax">JavaScript Syntax</h2>
+            <p>JavaScript syntax is the set of rules that define a correctly structured JavaScript program. A JavaScript program is a list of programming statements that are executed in the order they are written. Here are some basic elements of JavaScript syntax:</p>
+            <ul>
+                <li>Variables</li>
+                <li>Operators</li>
+                <li>Data Types</li>
+                <li>Functions</li>
+                <li>Control Structures (if-else, loops)</li>
+            </ul>
 
-        // alert(`Hello, ${username} ${lastname}! Welcome to jawascript`);
-        
-        // let score = prompt("What is ur marks: ");
-        // if(score >=90){
-        //     alert("Grade: A")
-        // }else if (score > 75){
-        //     alert("Grade: B")
-        // }else{
-        //     alert("Grade: C")
-        // }
+            <h2 id="variables">Variables</h2>
+            <p>Variables are containers for storing data values. In JavaScript, you can declare variables using the <code>var</code>, <code>let</code>, or <code>const</code> keywords. For example:</p>
+            <pre><code>let name = 'John';</code></pre>
+            <pre><code>const age = 30;</code></pre>
 
-         let number = prompt("Enter Number: ");
-        if(number % 2 === 0){
-            alert("Even")
-        }else{
-            alert("Odd")
-        }
+            <h2 id="datatypes">Data Types</h2>
+            <p>JavaScript supports various data types, including:</p>
+            <ul>
+                <li><strong>Primitive Types:</strong> String, Number, Boolean, Null, Undefined, Symbol</li>
+                <li><strong>Reference Types:</strong> Objects (Array, Function, Date, etc.)</li>
+            </ul>
 
-        // let fnumber = prompt("Enter First Number: ");
-        // let lnumber = prompt("Enter Last Number:  ");
-        
-        // console.log(fnumber);
-        // console.log(lnumber);
-        // console.log(fnumber+lnumber);
-        // console.log(fnumber + " + " + lnumber + " = " + (fnumber+lnumber));
-        
-        // let ptag = document.querySelector("h1");
-        // ptag.innerHTML = `${fnumber} + ${lnumber} = ${fnumber+lnumber}`
-    
-       
-        
+            <h2 id="functions">Functions</h2>
+            <p>Functions are blocks of code designed to perform a particular task. You can define a function using the <code>function</code> keyword, and you can call the function by its name followed by parentheses. For example:</p>
+            <pre><code>function greet() {
+    console.log('Hello, world!');
+}
+greet();</code></pre>
 
-    </script>
-    <h1>Sandesh</h1>
+            <h2 id="events">Events</h2>
+            <p>JavaScript allows you to respond to user actions, such as clicks and keypresses, through event handling. You can use various event listeners to detect and respond to events. For example:</p>
+            <pre><code>document.getElementById('myButton').addEventListener('click', function() {
+    alert('Button clicked!');
+});</code></pre>
+
+            <h2 id="dom">DOM Manipulation</h2>
+            <p>The Document Object Model (DOM) is a programming interface that allows you to create, change, or remove elements from the document structure. With DOM manipulation, you can dynamically update the content and style of a webpage. For example:</p>
+            <pre><code>document.getElementById('myElement').textContent = 'Hello, DOM!';</code></pre>
+
+            <h2 id="es6">ES6 Features</h2>
+            <p>ECMAScript 6 (ES6) introduced several new features and syntax improvements to JavaScript. Some of the notable ES6 features include:</p>
+            <ul>
+                <li>Arrow Functions</li>
+                <li>Template Literals</li>
+                <li>Destructuring Assignment</li>
+                <li>Modules</li>
+                <li>Promises</li>
+                <li>Let and Const</li>
+            </ul>
+
+            <div class="info-box">
+                <p>This is an info box. You can use it to highlight important information or tips.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
